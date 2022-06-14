@@ -5,11 +5,13 @@
 
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
 
-}
+
+    body{
+        background-image: url("../../img/mur.jpg");
+        }
+
+
 
 
 
@@ -20,7 +22,8 @@ body {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 70px;
+    margin-top: 60px;
+    margin-bottom: 3%;
 }
 main article{
     display: flex;
@@ -91,16 +94,33 @@ main article h3:nth-child(2){
     align-items: center;
 }
 
+button {
+    width: 165px;
+    height: 50px;
+    border-radius: 180px;
+    position: relative;
+    cursor: pointer;
+    line-height: 12px;
+    font-size: 25px;
+    font-style: italic;
+    color: blue;
+    margin-left: 45%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+  
+}
+
 
 
 /* EROR */
 
 .h1erreur {
   color: red;
-  margin-bottom:5%;
   margin-top:5%;
+  margin-bottom:5%;
   font-size: 50px;
   transition: 0.8s;
+  text-align: center;
 }
 
 
@@ -112,6 +132,9 @@ main article h3:nth-child(2){
 .h2erreur {
     color: rgb(0, 0, 0);
     font-size: 30px;
+    text-align: center;
+    margin-top:5%;
+    margin-bottom:5%;
 }
 
 .aerreur {

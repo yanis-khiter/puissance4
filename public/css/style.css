@@ -1,79 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+text-align: center;
 }
 
 body{
-    background-image: url("./img/back.jpg");
-    background-image: cover;
-
-    }
+background-image: url("../../img/good.jpg");
+}
 
 
+.formi {
+margin-bottom: 12%;
+}
 .container {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+width: 100%;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .container-fieldset{
-    width: 50%;
-    display: flex;
-    padding: 2%;
-    justify-content: center;
+width: 50%;
+display: flex;
+padding: 2%;
+justify-content: center;
+margin-bottom: 10%;
 }
 
 .left{
+    padding: 10%;
 margin-top: 5%;
+padding-top: 5%;
 width: 500px;
-    background-color: #f2ff00;
+background-color: #f2ff00;
+
 }
 
 .right{
-    margin-top: 5%;
+    padding: 10%;
+margin-top: 5%;
+padding-top: 5%;
 width: 500px;
-    background-color: #ff2f00;
+background-color: #ff2f00;
 }
 
 input{
-    border: 2px solid #000000;
-    font: 25px "Open Sans", sans-serif;
-    border-radius: 20px;
-    text-align: center;
-    color: #000000;
-    width: 75%;
-    margin-bottom: 15%;
+border: 2px solid #000000;
+font: 25px "Open Sans", sans-serif;
+border-radius: 20px;
+text-align: center;
+color: #000000;
+width: 75%;
+margin-bottom: 10%;
 }
 
 button{
-    background-color: rgb(251, 251, 251);
-    border: 2px solid rgb(0, 0, 0);
-    font-size: 25px;
-    width: 250px;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-margin: 15px;
-
+background-color: rgb(251, 251, 251);
+border: 2px solid rgb(0, 0, 0);
+font-size: 25px;
+width: 250px;
+text-align: center;
+color: rgb(0, 0, 0);
+cursor: pointer;
+margin: 5px;
 }
 
 label {
 color: rgb(0, 0, 0);
 font-size: 20px;
+
 }
 
 
 
 .connexion {
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 1px 1px 10px #141414;
+text-shadow: -1px -1px 0 rgb(255, 242, 0), 1px -1px 0 rgb(255, 234, 0), -1px 1px 0 rgb(255, 234, 0), 1px 1px 0 rgb(255, 242, 0), 1px 1px 10px #141414;
 color: rgb(0, 0, 0);
 font-size: 30px;
 text-align: center;
@@ -83,10 +89,14 @@ margin-bottom: 2%;
 
 
 .inscription {
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 1px 1px 10px #141414;
+text-shadow: -1px -1px 0 rgb(255, 0, 0), 1px -1px 0 rgb(255, 0, 0), -1px 1px 0 rgb(255, 0, 0), 1px 1px 0 rgb(255, 0, 0), 1px 1px 10px #141414;
 color: rgb(0, 0, 0);
 font-size: 30px;
 text-align: center;
 margin-top: 3%;
 margin-bottom: 2%;
+}
+
+.fin {
+    margin-top: 5%;
 }

@@ -16,6 +16,7 @@ $classement = $stats->classement();
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../public/css/classement.css">
     <link rel="stylesheet" href="../public/css/header.css">
+    <link rel="stylesheet" href="../public/css/footer.css">
     <title>Classement</title>
 </head>
 <body>
@@ -24,7 +25,7 @@ $classement = $stats->classement();
         <?php if(isset($_SESSION['user'])){?>
 
             <div class="navbar">
-                <ul>
+                <ul class>
                     <a href="puissance4.php"><li>Puissance 4</li></a>
                     <a href="classement.php"><li>Classement</li></a>
                     <a href="disconnect.php"><li>Deconnexion</li></a>

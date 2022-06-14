@@ -47,7 +47,7 @@ if(isset($_POST['register'])){
         <div class="container">
             <?php if(!Security::isConnect()){?>
                 <div class="container-fieldset">
-                        <form action="" method="post">
+                        <form action="" method="post" class="formi">
                         <h1 class="connexion" >Connectez-vous</h1>
                             <fieldset class="left">
                         
@@ -56,7 +56,7 @@ if(isset($_POST['register'])){
                                 <br>
                                 <label for ="passwordC">  Mot de passe :</label>
                                 <input id="passwordC" type="password" name="passwordC" placeholder="*****" />
-                                <button type="submit" name="connection">Connexion</button>
+                                <button class="fin" type="submit" name="connection">Connexion</button>
                             </fieldset>
                         </form>
                     </div>
@@ -73,7 +73,7 @@ if(isset($_POST['register'])){
                                 <br>
                                 <label for ="conf-password">Confirmez le mot de passe :</label>
                                 <input id="conf-password" type="password" name="conf-password" placeholder="*****" />
-                                <button type="submit" name="register">Créer un compte</button>
+                                <button class ="fin" type="submit" name="register">Créer un compte</button>
                             </fieldset>
                         </form>
                     </div>
@@ -85,6 +85,6 @@ if(isset($_POST['register'])){
                 <?php } ?>
         </div>
     </main>
-    <?php require_once(__DIR__ . '/view/footer-index.php'); ?>
+    <?php require_once(__DIR__ . '/view/footer.php'); ?>
 </body>
 </html>

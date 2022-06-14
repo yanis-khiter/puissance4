@@ -116,22 +116,22 @@ function checkWinner() {
 }
 function setWinner(r, c) {
     if (board[r][c] == playerRed) {
-        alert("Le rouge a gagné !")
+        alert("Le joueur rouge a gagné !")
         $.ajax({
             url: "../model/game_win.php",
             type: "POST"
         });
     } else {
-        alert("Le jaune a gagné !")
+        alert("Le joueur jaune a gagné !")
         $.ajax({
             url: "../model/game_loose.php",
             type: "POST"
         });
     }
     var button = document.createElement("button");
-    button.innerHTML = "Relancer une partie";
-    var main = document.getElementsByTagName("main")[0];
-    main.appendChild(button);
+    button.innerHTML = "REJOUER";
+    var rejouer = document.getElementById("rejouer");
+    rejouer.append(button);
     button.addEventListener ("click", function() {
         location.reload();
     });

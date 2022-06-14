@@ -12,6 +12,7 @@ session_start();
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../public/css/puissance4.css">
     <link rel="stylesheet" href="../public/css/header.css">
+    <link rel="stylesheet" href="../public/css/footer.css">
     <script src="../public/js/script.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <title>Puissance 4</title>
@@ -37,6 +38,12 @@ session_start();
 
  
     <main>
+
+    <div id="rejouer">
+
+    </div>
+
+
         <?php if(Security::isConnect()){?>
      
         <div id="board"></div>
@@ -50,6 +57,8 @@ session_start();
         } ?>
         <br>
     </main>
+
+    <?php require_once 'footer.php'; ?>
  
 </body>
 </html>

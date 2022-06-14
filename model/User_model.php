@@ -19,7 +19,7 @@ class User_model{
             ));
             $results = User_model::info_user_login($login_safe);
             Stats_model::create_profil($results['id']);
-            Toolbox::addMessageAlert("Le compte est créé!", Toolbox::GREEN_COLOR);
+            Toolbox::addMessageAlert("Compte crée !", Toolbox::GREEN_COLOR);
             header("Location: ./index.php");
             exit();
         }
